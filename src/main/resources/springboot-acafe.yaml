@@ -1,0 +1,20 @@
+name: springboot-acafe
+app: java@17
+options:
+  ports: 8080
+  env:
+    - name: DB_HOST
+      value: mariadb
+    - name: DB_PORT
+      value: "3306"
+    - name: DB_USERNAME
+      value: root
+    - name: DB_PASSWORD
+      value: root
+    - name: DB_NAME
+      value: acafe
+context:
+  git:
+    url: https://github.com/rladnjs705/springboot-acafe.git
+    branch: master
+  preset: java-springboot
