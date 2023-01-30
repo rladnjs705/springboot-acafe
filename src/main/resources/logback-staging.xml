@@ -2,7 +2,7 @@
 <!DOCTYPE configuration>
 
 <configuration scan="true" scanPeriod="30 seconds">
-    <property name="LOG_ROOT" value="/data001" />
+    <property name="LOG_ROOT" value="./data001" />
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
